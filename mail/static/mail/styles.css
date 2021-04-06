@@ -1,0 +1,61 @@
+
+body {
+    min-height: 100vh;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: seashell;
+}
+.read {
+    background: repeating-linear-gradient(
+  61deg,
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.2) 10px,
+  rgba(0, 0, 0, 0.3) 10px,
+  rgba(0, 0, 0, 0.3) 20px
+);
+}
+
+#emails-view div {
+    background-color: white;
+}
+
+.darker:hover {
+    filter: brightness(85%);
+}
+
+.darker:active {
+    filter: brightness(70%);
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes empty {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+.empty-animation {
+    animation-name: empty;
+}
+
+#emails-view, #compose-view {
+    animation-name: hide;
+    animation-duration: 1s;
+}
